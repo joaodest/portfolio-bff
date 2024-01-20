@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using portfolio_bff.Models;
+using portfolio_bff.Models.Github;
+using portfolio_bff.Models.Linkedin;
 
 namespace portfolio_bff.Repositories
 {
@@ -10,7 +12,7 @@ namespace portfolio_bff.Repositories
         }
 
         public DbSet<User> Users { get; set; }
-        public DbSet<Linkedin> LinkedinUsers { get; set; }
-        public DbSet<Github> GithubUsers { get; set; }
+        public DbSet<LinkedInUser> LinkedinUsers { get; set; }
+        public DbSet<GithubUser> GithubUsers { get; set; }
     }
 }
